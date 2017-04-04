@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+  <title>Ejercicio 3.2.5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Actividad 3.2.5</h2>
+  
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#nuevousuario">Nuevo usuario</a></li>
+    <li><a data-toggle="tab" href="#consultausuario">Consulta usuario</a></li>
+    <li><a data-toggle="tab" href="#nuevoarticulo">Nuevo artículo</a></li>
+	<li><a data-toggle="tab" href="#consultaarticulo">Consulta artículo</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="nuevousuario" class="tab-pane fade in active">
+      <h3>Nuevo usuario</h3>
+      <!-- -->
+	  <form>
+                <div class="form-group">
+                    <label for="txtnombre">Nombre: </label>
+                    <input type="text" id="txtnombre" class="form-control"/>
+                </div>
+				<div class="form-group">
+                    <label for="txtcontrasena">Contraseña: </label>
+                    <input type="password" id="txtcontrasena" class="form-control"/>
+                </div>
+				<div class="form-group">
+                    <label for="txtedad">Contraseña: </label>
+                    <input type="numeric" id="txtedad" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Correo Electrónico: </label>
+                    <input type="email" id="txtcorreo" class="form-control"/>
+                </div>
+                
+                
+                <div class="form-group">
+                  <div class="col-lg-offset-10">
+                    <button type="button" class="btn btn-primary btn-block"> Guardar</button>
+                    </div>
+				</div>
+            </form>
+	  <!-- -->
+    </div>
+    <div id="consultausuario" class="tab-pane fade">
+      <h3>Consulta usuario</h3>
+      <!-- -->
+	  <table class="table">
+                <theader>
+                    <th>No.</th> 
+                    <th>Usuario</th>
+                    <th>Contraseña </th>
+                    <th>Edad</th>  
+					<th>Correo electrónico</th>  
+                </theader>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>iarjona</td>
+                        <td>01041987</td>
+                        <td>32</td>
+						<td>iarjona@ittepic.edu.mx</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>kmoreno</td>
+                        <td>01041980</td>
+                        <td>23</td>
+						<td>kmoreno@ittepic.edu.mx</td>
+                    </tr>
+                    <tr>
+
+                        <td>3</td>
+                        <td>ecasto</td>
+                        <td>02041972</td>
+                        <td>50</td>
+						<td>ecasto@ittepic.edu.mx</td>
+                    </tr>
+                    <tr>
+
+                        <td>4</td>
+                        <td>pjimenez</td>
+                        <td>03041970</td>
+                        <td>35</td>
+						<td>pjimenez@ittepic.edu.mx</td>
+                    </tr>
+                    <tr>
+
+                        <td>5</td>
+                        <td>blopez</td>
+                        <td>04041969</td>
+                        <td>43</td>
+						<td>blopez@ittepic.edu.mx</td>
+                    </tr>
+                </tbody>
+            </table>
+	  <!-- -->
+	  
+    </div>
+    <div id="nuevoarticulo" class="tab-pane fade">
+      <h3>Nuevo artículo</h3>
+      <!-- -->
+	   	  <form>
+                <div class="form-group">
+                    <label for="txtarticulo">Nombre: </label>
+                    <input type="text" id="txtarticulo" class="form-control"/>
+                </div>
+				<div class="form-group">
+                    <label for="txtdescripcion">Descripción: </label>
+                    <input type="text" id="txtdescripcion" class="form-control"/>
+                </div>
+				<div class="form-group">
+                  <div class="col-lg-offset-10">
+                    <button type="button" class="btn btn-primary btn-block"> Guardar</button>
+                    </div>
+				</div>
+			</form>
+			
+
+	  <!-- -->
+    </div>
+    <div id="consultaarticulo" class="tab-pane fade">
+      <h3>Consulta Artículo</h3>
+      <!-- -->
+	  <table class="table">
+                <theader>
+                    <th>Id</th> 
+                    <th>Nombre</th>
+                    <th>Descripción </th>
+                    
+                </theader>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Macobook air</td>
+                        <td>13 pulgadas,8 RAM, 1TB HDD, Intel Core i5</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HP ProBook</td>
+                        <td>13 pulgadas,8 RAM, 1TB HDD, 128 SSD</td>
+                        
+                    </tr>
+                    <tr>
+
+                        <td>3</td>
+                        <td>ASUS X555DG-X00917</td>
+                        <td>256 SSD, Intel Core i5</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+	  <!-- -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
